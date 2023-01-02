@@ -1,0 +1,225 @@
+@media (min-width: 2048px) and (max-width: 3000px) {
+    
+}
+* {
+    box-sizing: border-box;
+}
+
+html.light {
+    --color--bg: white;
+    --color--text: #1D1F20;
+}
+
+html.dark {
+    --color--bg: #1D1F20;
+    --color--text: white;
+}
+
+.another_project {
+    text-decoration: none;
+}
+
+.themes {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    border: var(--color--text) solid 1px;
+    border-radius: 5px;
+    z-index: 500; 
+}
+
+body {
+    height: auto;
+    width: auto;
+    transition: 1s;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--color--bg);
+    color: var(--color--text);
+}
+
+.wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.page-title {
+    min-height: 20%;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 46px;
+    color: var(--color--text);
+}
+
+.page-title2 {
+    min-height: 20%;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 26px;
+    color: var(--color--text);
+}
+
+
+.card {
+    width: 550px;
+    min-width: 100px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--color--bg);;
+    color: var(--color--bg);
+    box-shadow: 0 0 10px var(--color--text);
+    margin-bottom: 50px;
+}
+
+.card1 {
+    width: 600px;
+    min-width: 100px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--color--bg);;
+    color: var(--color--text);
+    box-shadow: 0 0 10px var(--color--text);
+    margin-bottom: 50px;
+    text-align: center;
+    --borderWidth: 15px;
+    position: relative;
+    border-radius: var(--borderWidth);
+    text-align: center;
+}
+
+.arrow {
+    top: 15px;
+    margin-right: 5px;
+}
+
+.title {
+    font-size: 32px;
+    color:  var(--color--text);
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+a:visited{
+    color: var(--color--text);
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+.instagram {
+    margin: 10px;
+    color: var(--color--text);
+}
+
+.telegram {
+    margin: 10px;
+    color: var(--color--text);
+}
+
+.github {
+    margin: 10px;
+    color: var(--color--text);
+}
+
+.text {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.5;
+    color:  var(--color--text);
+}
+
+.gradient-border {
+    --borderWidth: 10px;
+    background: #1D1F20;
+    position: relative;
+    border-radius: var(--borderWidth);
+    z-index: 100;
+    width: 50%;
+  }
+  .gradient-border:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+  }
+  
+  
+  @keyframes animatedgradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+
+.gradient-border1 {
+    --borderWidth: 10px;
+    background: #1D1F20;
+    position: relative;
+    border-radius: var(--borderWidth);
+    z-index: 100;
+    word-wrap: break-word;
+  }
+
+  .gradient-border1:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+  }
+
+.img {
+    border-radius: 500px;
+}
+
+
+
+  #box1{
+    height: 45px;
+    width: 45%;
+    min-width: 250px;
+  }
+
+  
+  @keyframes animatedgradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
